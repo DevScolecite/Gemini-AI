@@ -1,9 +1,13 @@
 import os
+from dotenv import load_dotenv
 import google.generativeai as genai
 import PIL.Image
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Configure your Gemini API key
-api_key = os.environ.get("AIzaSyCmTFXRc4lvuguHnyqyB15AjYkAu_FJ29Q")
+api_key = os.environ.get("GOOGLE_API_KEY")
 print(f"API Key: {api_key}")  # Debugging line to print the API key
 
 if not api_key:
