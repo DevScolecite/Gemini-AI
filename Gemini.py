@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 import PIL.Image
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from gemini.env file
+load_dotenv(dotenv_path='gemini.env')
 
 # Configure your Gemini API key
 api_key = os.environ.get("GOOGLE_API_KEY")
